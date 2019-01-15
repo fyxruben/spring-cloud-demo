@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://EUREKA:8080/eureka/
+    registry-fetch-interval-seconds: 5 # 拉取服务列表间隔时间
+  instance:
+    lease-expiration-duration-in-seconds: 15 #过期时间
+    lease-renewal-interval-in-seconds: 5 # 心跳时间
+
+ribbon:
+  ServerListRefreshInterval: 5000 # 刷新RPC服务实际

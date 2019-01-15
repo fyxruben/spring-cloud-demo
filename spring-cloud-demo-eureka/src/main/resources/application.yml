@@ -1,7 +1,10 @@
 server:
-  port: 8765
+  port: 8080
 
 eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+  server:
+    eviction-interval-timer-in-ms: 5000 # 过期清理
+    use-read-only-response-cache: false # 禁用缓存
