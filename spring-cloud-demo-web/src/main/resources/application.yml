@@ -11,4 +11,8 @@ eureka:
     lease-renewal-interval-in-seconds: 5
 
 ribbon:
-  ServerListRefreshInterval: 5000
+  ServerListRefreshInterval: 1000
+
+provider:
+  ribbon:
+    ServerListRefreshInterval: 1000
